@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --cor0: #000000;
+    --cor1: #001f36;
+    --cor2: #1c5560;
+    --cor3: #79ae92;
+    --cor4: #fbffcd;
+    --cor5: #fff;
+}
+
+header nav.navigation{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.26);
+    
+    background: var(--cor0);
+    transition: all 0.5s;
+    position: fixed;
+}
+header div p{
+    color: var(--cor5);
+    font-size: 17px;    
+}
+header nav.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+header nav.navigation ul li a{
+    padding: 8px;
+    color: var(--cor5);
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+header nav.navigation ul li a:hover{
+    border-bottom: 2px solid var(--cor3);   
+}
+/*header nav ul li a#contatos{
+    background-color: #00bfff;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;    
+}
+header nav ul li a#contatos:hover{
+    background-color: var(--orange);
+    transition: 0.3s;
+    color: white;   
+}
+*/
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--cor4);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--cor4);
+}
