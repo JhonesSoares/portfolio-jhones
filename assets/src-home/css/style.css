@@ -25,7 +25,6 @@ header nav.navigation{
     justify-content: space-between;
     padding: 10px 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.26);
-    
     background: var(--cor0);
     transition: all 0.5s;
     position: fixed;
@@ -49,18 +48,12 @@ header nav.navigation ul li a{
 header nav.navigation ul li a:hover{
     border-bottom: 2px solid var(--cor3);   
 }
-/*header nav ul li a#contatos{
-    background-color: #00bfff;
-    border: none;
-    border-radius: 15px;
-    transition: 0.5s;    
+#linkedin {
+    border-bottom: none;    
 }
-header nav ul li a#contatos:hover{
-    background-color: var(--orange);
-    transition: 0.3s;
-    color: white;   
+#linkedin:hover{
+    opacity: 0.7;
 }
-*/
 .menu{
     cursor: pointer;
     display: none;
@@ -77,4 +70,51 @@ header nav ul li a#contatos:hover{
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
     background: var(--cor4);
+}
+
+/* MAIN CONTEUDO */
+section#inicio {
+    background-color: var(--cor0);
+}
+section div#div-inicio{
+    width: 1300px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor5);
+}
+section div#div-inicio h1{
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+section div#div-inicio h1 span{
+    border-bottom: solid 3px var(--cor2);
+    font-size: 100px;
+    font-weight: 600;
+}
+section div#div-inicio p{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+section div#div-inicio button{
+    background-color: transparent;
+    border: solid 2px;
+    color: var(--cor5);
+    margin: 50px 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+section div#div-inicio button:hover{
+    border: solid 2px var(--cor2);
+    color: var(--cor2);
+    transition: 0.2s;
+}
+section div#div-image img{
+    border-radius: 10%;
 }
